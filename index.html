@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head Section - all the required links + title -->
+    <head>
+        <title>Nick Rader - Portfolio</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/styles.css"/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <body>
+      <!-- Navbar Section -->
+      <div class="stickynav">
+        <nav class="topnav w3-top" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+      </div>
+      <!-- Main Page Content-->
+      <div class="content">
+        <!-- Hero Image/Home Section -->
+        <section id="home" class="hero">
+          <div class="hero-bg"></div>
+          <div class="hero-text">
+              <h1>Hi, I'm Nick Rader</h1>
+              <h4>Aspiring Front-End/Web Developer</h4>
+              <div class="w3-padding-top-24">
+                <a href="#about" class="input-button">Check me out!</a>
+              </div>
+          </div>
+        </section>
+        <!-- About Me Section -->
+        <section id="about" class="item">
+          <h2>About</h2><hr>
+          <div class="w3-row-padding w3-card w3-padding-24 w3-margin-top">
+            <!-- Image + Description of Me -->
+            <div class="w3-col m6 s12 w3-display-container">
+              <img src="/images/Me.png" class="item-image">
+              <p>
+                I'm an aspiring Front-End/Web Developer in Kernersville, NC. 
+                I have a great passion for UI/UX design, graphics, and creating responsive and  
+                interactive apps for all users to enjoy throughout the world!
+              </p>
+            </div>
+            <!-- Skills Area -->
+            <div class="w3-col m6 s12 w3-display-container w3-margin-bottom">
+              <h4>Skills</h4>
+              <div class="skills-wrap">
+                <div class="container">
+                  <div class="skills" style="width: 90%;">HTML/EJS - 90%</div>
+                </div>
+                <div class="container">
+                  <div class="skills" style="width: 80%;">CSS/SASS - 80%</div>
+                </div>
+                <div class="container">
+                  <div class="skills" style="width: 75%;">SQL - 75%</div>
+                </div>
+                <div class="container">
+                  <div class="skills" style="width: 70%;">JS/Node - 70%</div>
+                </div>
+                <div class="container">
+                  <div class="skills" style="width: 65%;">C/C++ - 65%</div>
+                </div>
+                <div class="container">
+                  <div class="skills" style="width: 65%;">Photoshop - 65%</div>
+                </div>
+                <div class="container">
+                  <div class="skills" style="width: 65%;">Vim - 65%</div>
+                </div>
+                <div class="container">
+                  <div class="skills" style="width: 50%;">PHP - 50%</div>
+                </div>
+                <div class="container">
+                  <div class="skills" style="width: 50%;">Python - 50%</div>
+                </div>
+              </div>
+            </div>
+            <!-- Link to Resume File -->
+            <p>Link to my resume <a href="/files/Resume.pdf" target="blank">here!</a></p>
+          </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects" class="item">
+          <h2>Projects</h2><hr>
+          <!-- ESTT Site -->
+          <div class="w3-display-container w3-padding-24 w3-card-2 w3-margin-top" style="width: 100%;">
+            <h5><a href="https://github.com/nrader2000/ESTT_Site" target="blank">ESTT Web App</a></h5>
+            <img src="/images/estt-site.png" class="w3-image" alt="A screenshot of the ESTT promotion webapp, showcasing the design and the Front-End of the page.">
+            <p class="w3-container w3-center">
+              I made a Web Site for my ESTT Tabletop Game. This project involves 
+              UI development and basic design and inclusion of responsive changesof a webpage 
+              using HTML5/CSS, as well as database integration to a website using NODE JS/SQL 
+              code for the website's backend.  
+            </p>
+          </div>
+          <!-- VCheckbook Site -->
+          <div class="w3-display-container w3-padding-24 w3-card-2 w3-margin-top" style="width: 100%;">
+            <h5><a href="https://github.com/nrader2000/VCheckbook-Webapp" target="blank">VCheckbook Web App</a></h5>
+            <img src="/images/vcheckbook-site.png" class="w3-image" alt="A screenshot of the vcheckbook webapp, showcasing the design and the Front-End of the page.">
+            <p class="w3-container w3-center">
+              I made a Web Site for my Virtual Checkbook app idea. This project involves 
+              UI development and basic design and inclusion of responsive changesof a webpage 
+              using HTML5/CSS, as well as database integration to a website using NODE JS/SQL 
+              code for the website's backend. 
+            </p>
+          </div>
+          <!-- Madlibs Site -->
+          <div class="w3-display-container w3-padding-24 w3-card-2 w3-margin-top" style="width: 100%;">
+            <h5><a href="https://linus.highpoint.edu/~nrader/Madlibs%20Assignment/" target="blank">Madlibs App</a></h5>
+            <img src="/images/madlibs.png" class="w3-image" alt="A screenshot of the madlibs webapp, showcasing the design and the Front-End of the page.">
+            <p class="w3-container w3-center">
+              I was assigned to work on a Madlibs website with a couple of my peers 
+              in my Web Technologies course. There we accomplished making a clean and 
+              easy-to-use website where the stories would randomly generate after each 
+              time submitting input. This site was created using HTML5/CSS/PHP/Javascript. 
+            </p>
+          </div>
+          <!-- Skyrim Madlibs Site -->
+          <div class="w3-display-container w3-padding-24 w3-card-2 w3-margin-top">
+            <h5><a href="https://linus.highpoint.edu/~nrader/mypractice/phpstuff/madlibsassignment/" target="blank">Skyrim Madlibs App</a></h5>
+            <img src="/images/madlibs 2.png" class="w3-image" alt="A screenshot of the skyrim madlibs webapp, showcasing the design and the Front-End of the page.">
+            <p class="w3-container w3-center">
+              This webapp was a solo assignment going off the Madlibs Assignment to 
+              implement these same technologies but with a spin/ a new theme of Skyrim 
+              dialogue and famous lines. This app is very straigh-forward to use and has a 
+              very simple UI to work with. This site was created using HTML5/CSS/PHP/Javascript.
+            </p>
+          </div>
+          <!-- Db Project -->
+          <div class="w3-display-container w3-padding-24 w3-card-2 w3-margin-top">
+            <h5><a href="https://docs.google.com/spreadsheets/d/1gV6l89W-kug_dS7Cm3116zZdcSulJC_p3mjwJCfB5gs/edit?usp=sharing" target="blank">Database Design for HPU's School of Education</a></h5>
+            <img src="/images/soedb.png" class="w3-image" alt="A screenshot of the tables involved in the database design, showcasing the design of the database">
+            <p class="w3-container w3-center">
+              My Team and I were assigned to develop a database based on a spreadsheet that 
+              kept track of the School of Education’s current students and their progress throughout 
+              their major. This project involved Database Management, Design, MYSQL, and management 
+              of Databases on PHPMyAdmin. 
+            </p>
+          </div>
+          <!-- ESTT Project -->
+          <div class="w3-display-container w3-padding-24 w3-card-2 w3-margin-top">
+            <h5><a href="https://docs.google.com/spreadsheets/d/1WQAkuk-YLeig-l3_ixMxzXlOUboHj8WCHUQEZFJtqvY/edit?usp=sharing" target="blank">ESTT TableTop Game System (Spreadsheet)</a></h5>
+            <img src="/images/estt-sheet.png" class="w3-image" alt="A screenshot of the spreadsheet for my ESTT game system, showcasing the design of my game">
+            <p class="w3-container w3-center">
+              I made a full D&D-style tabletop game based on the popular video game Skyrim. 
+              This involved major Google Sheets/Spreadsheet Development, Database management, 
+              and design. I continue to be in constant management/development for the game ever 
+              since I came out with it by play-testing my game with my friends.
+            </p>
+          </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="item">
+          <h2>Contact</h2><hr>
+          <p>Have a question or have any oppurtunities?</p>
+          <!-- Form -->
+          <div class="w3-card w3-padding-24 w3-margin-top">
+            <form onsubmit="sendEmail(); reset(); return false" enctype="multipart/form-data" class="input-form w3-display-container">
+              <p>Name</p>
+              <input type="text" placeholder="e.g Joe Doe" id="emailSenderName" class="input-box" required><br>
+              <p>Email</p>
+              <input type="text" placeholder="e.g example@test.com" id="emailSender" class="input-box" required><br>
+              <p>Subject</p>
+              <input type="text" placeholder="e.g Your Subject" id="emailSubject" class="input-box" required><br>
+              <p>Message</p>
+              <textarea type="text" placeholder="Type your message here..." id="emailText" class="input-box2" required></textarea><br>
+              <input id="form-submit" type="submit" value="Send Message" class="input-button" onclick="setTimeout(changeButton, 2000);">
+            </form>
+          </div>
+        </section>
+      </div>
+      <!-- Footer -->
+      <footer>
+        <div class="links-row">
+          <a id="button" target="blank" href="https://www.linkedin.com/in/nicholas-rader-78887a185/"><i class="fa fa-linkedin"></i></a>
+          <a id="button" target="blank" href="https://github.com/nrader2000"><i class="fa fa-github"></i></a>
+          <a id="button" target="blank" href="mailto:nicholasrader2018@gmail.com"><i class="fa fa-envelope"></i></a>
+          <a id="button" target="blank" href="https://discord.com/users/217446277728698378"><i class="fa fa-discord"></i></a>
+        </div>
+        <p>&copy; Nick Rader 2021 - <span id="year"></span></p><br>
+        <a id="button" href="#home" style="border-radius: 10px; padding: 0 10px 0 10px;"><i class="fa fa-angle-double-up"></i></a>
+      </footer>
+      <!-- Scripts -->
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="/scripts/getyear.js"></script>
+      <script src="/scripts/navbar.js"></script>
+      <script src="/scripts/navigation.js"></script>
+      <script src="/scripts/email.js"></script>
+   </body>
+</html>
