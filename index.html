@@ -233,16 +233,15 @@
           <p>Have a question or have any opportunities?</p>
           <!-- Form -->
           <div class="w3-card w3-padding-24 w3-margin-top">
-            <form method="post" class="input-form w3-display-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="input-form w3-display-container">
+              <input type="hidden" name="access_key" value="8950cd87-81ee-400d-93da-01167b167431">
               <p>Name</p>
-              <input type="text" placeholder="e.g Joe Doe" id="emailSenderName" class="input-box" autocomplete="off" required><br>
+              <input type="text" placeholder="e.g Joe Doe" name="name" class="input-box" autocomplete="off" required><br>
               <p>Email</p>
-              <input type="email" placeholder="e.g example@test.com" id="emailSender" class="input-box" autocomplete="off" required><br>
-              <p>Subject</p>
-              <input type="text" placeholder="e.g Your Subject" id="emailSubject" class="input-box" autocomplete="off" required><br>
+              <input type="email" placeholder="e.g example@test.com" name="email" class="input-box" autocomplete="off" required><br>
               <p>Message</p>
-              <textarea type="text" placeholder="Type your message here..." id="emailText" class="input-box2" autocomplete="off" required></textarea><br>
-              <input id="form-submit" type="submit" value="Send Message" class="input-button" onclick="setTimeout(changeButton, 2000);">
+              <textarea type="text" placeholder="Type your message here..." name="message" class="input-box2" autocomplete="off" required></textarea><br>
+              <button id="form-submit" type="submit" value="Send Message" class="input-button">Submit</button>
             </form>
           </div>
         </section>
@@ -260,31 +259,7 @@
       </footer>
     </body>
     <!-- Scripts -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="scripts/getyear.js"></script>
     <script src="scripts/navbar.js"></script>
     <script src="scripts/navigation.js"></script>
-    <script src="scripts/email.js"></script>
-    <script>
-      var btn = document.getElementById('form-submit');
-      btn.addEventListener('click',function(e){
-        e.preventDefault()
-        var name = document.getElementById('emailSenderName').value;
-        var email = document.getElementById('emailSender').value;
-        var subject = document.getElementById('emailSubject').value;
-        var message = document.getElementById('emailText').value;
-        var body = 'name: ' + name + '<br/> email: ' + email + '<br/> subject: ' + subject + '<br/> message: ' + message;
-        Email.send({
-          Host : "smtp.gmail.com",
-          Username : "nicholasrader2018@gmail.com",
-          Password : "dajf rgxm nsme dsgf",
-          To : 'nicholasrader2018@gmail.com',
-          From : email,
-          Subject : subject,
-          Body : body
-        }).then(
-          message => alert(message)
-        );
-      })
-    </script>
 </html>
