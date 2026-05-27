@@ -131,7 +131,7 @@ a:hover {
 .item .item-image {
   width: 55%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 10%;
   box-shadow: 2px 2px 2px #222121;
 }
 
